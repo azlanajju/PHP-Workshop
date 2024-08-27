@@ -24,12 +24,12 @@
             <span class="green box"></span>
           </div>
         </div>
-        <button><i class="fa fa-copy"></i></button>
+        <button id="btn1" onclick="copyFunction('btn1', 'code1')"><i class="fa fa-copy"></i></button>
         <div class="container">
           <div class="card_content">
             <code>
               $ <span class="comment">-- SQL query to create a table named toDos with columns id, title, and description. The id column is set to auto-increment:</span>
-              <pre>
+              <pre id="code1">
       CREATE TABLE toDos (
       id INT AUTO_INCREMENT PRIMARY KEY,
       title VARCHAR(100) NOT NULL,
@@ -40,32 +40,32 @@
           </div>
         </div>
         <hr />
-        <button><i class="fa fa-copy"></i></button>
+        <button id="btn2" onclick="copyFunction('btn2', 'code2')"><i class="fa fa-copy"></i></button>
         <div class="container">
           <div class="card_content">
             <code>
               $ <span class="comment">-- SQL insertion query to insert one record into the toDos table:</span>
-              <pre>      INSERT INTO toDos (title, description) VALUES ('Sample Task', 'This is a sample task description.');</pre>
+              <pre id="code2">      INSERT INTO toDos (title, description) VALUES ('Sample Task', 'This is a sample task description.');</pre>
             </code>
           </div>
         </div>
         <hr />
-        <button><i class="fa fa-copy"></i></button>
+        <button id="btn3" onclick="copyFunction('btn3', 'code3')"><i class="fa fa-copy"></i></button>
         <div class="container">
           <div class="card_content">
             <code>
               $ <span class="comment">-- SQL query to delete a record from the toDos table using its id:</span>
-              <pre>      DELETE FROM toDos WHERE id = 1;</pre>
+              <pre id="code3">      DELETE FROM toDos WHERE id = 1;</pre>
             </code>
           </div>
         </div>
         <hr />
-        <button><i class="fa fa-copy"></i></button>
+        <button id="btn4" onclick="copyFunction('btn4', 'code4')"><i class="fa fa-copy"></i></button>
         <div class="container">
           <div class="card_content">
             <code>
               $ <span class="comment">-- SQL query to update a record in the toDos table using its id:</span>
-              <pre>
+              <pre id="code4">
       UPDATE toDos 
       SET title = 'Updated Task', description = 'This is the updated task description.' 
       WHERE id = 1;
@@ -92,13 +92,13 @@
             <span class="green box"></span>
           </div>
         </div>
-        <button><i class="fa fa-copy"></i></button>
+        <button  id="btn5" onclick="copyFunction('btn5', 'code5')"><i class="fa fa-copy"></i></button>
 
         <div class="container">
           <div class="card_content">
             <code
               >$ <span class="comment">// config.php (Database Connection Configuration):</span>
-              <pre>
+              <pre id="code5">
       &lt;?php
       $servername = "localhost"; 
       $username = "root"; 
@@ -134,13 +134,13 @@
             <span class="green box"></span>
           </div>
         </div>
-        <button><i class="fa fa-copy"></i></button>
+        <button id="btn6" onclick="copyFunction('btn6', 'code6')"><i class="fa fa-copy"></i></button>
         <div class="container">
           <div class="card_content">
             <code
               >$ <span class="comment">//select.php (Select Data):</span>
 
-              <pre>
+              <pre id="code6">
                 &lt;?php
                 include 'config.php';
                 
@@ -178,13 +178,13 @@
             <span class="green box"></span>
           </div>
         </div>
-        <button><i class="fa fa-copy"></i></button>
+        <button id="btn8" onclick="copyFunction('btn8', 'code8')"><i class="fa fa-copy"></i></button>
         <div class="container">
           <div class="card_content">
             <code
               >$ <span class="comment">//insert.php (Insert Data): </span>
 
-              <pre>
+              <pre id="code8">
                 &lt;?php
                 include 'config.php';
                 
@@ -224,13 +224,13 @@
             <span class="green box"></span>
           </div>
         </div>
-        <button><i class="fa fa-copy"></i></button>
+        <button id="btn9" onclick="copyFunction('btn9', 'code9')"><i class="fa fa-copy"></i></button>
         <div class="container">
           <div class="card_content">
             <code
               >$ <span class="comment">//update.php (Update Data):</span>
 
-              <pre>
+              <pre id="code9">
                 &lt;?php
                 include 'config.php';
                 
@@ -271,13 +271,13 @@
             <span class="green box"></span>
           </div>
         </div>
-        <button><i class="fa fa-copy"></i></button>
+        <button id="btn10" onclick="copyFunction('btn10', 'code10')"><i class="fa fa-copy"></i></button>
         <div class="container">
           <div class="card_content">
             <code
               >$ <span class="comment">// delete.php (Delete Data):</span>
 
-              <pre>
+              <pre id="code10">
                 &lt;?php
                 include 'config.php';
                 

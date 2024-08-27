@@ -108,10 +108,13 @@ code {
 	display: flex;
 	justify-content:center;
 }
-.nextPrevBtn button{
-margin: 10px 100px;
+.nextPrevBtn a{
+margin: 10px 50px !important;
 	font-weight: bold;
 	border: none;
 	font-family: "fira-mono", monospace;
 
+}
+hr{
+  color: white;
 }
